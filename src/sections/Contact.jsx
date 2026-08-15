@@ -37,8 +37,11 @@ function GithubIcon() {
       aria-hidden="true"
     >
       <path
-        d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.36 6.85 9.71.5.1.68-.22.68-.49v-1.75c-2.78.62-3.37-1.38-3.37-1.38-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1.01.07 1.54 1.06 1.54 1.06.9 1.57 2.37 1.12 2.95.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05A9.16 9.16 0 0 1 12 7.36c.85 0 1.7.12 2.5.37 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.95.68 1.92v2.84c0 .27.18.6.69.49A10.23 10.23 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"
-        fill="currentColor"
+        d="M15 22v-4.6c0-1.2-.4-2.1-1.1-2.7 3.5-.4 7.1-1.7 7.1-7.6 0-1.7-.6-3.1-1.6-4.2.2-.4.7-2-.2-4.1 0 0-1.3-.4-4.2 1.6A14.6 14.6 0 0 0 12 0a14.6 14.6 0 0 0-3.8.5C5.3-1.5 4-1.1 4-1.1c-.9 2.1-.3 3.7-.2 4.1-1 1.1-1.6 2.5-1.6 4.2 0 5.9 3.6 7.2 7.1 7.6-.5.4-.9 1.1-1 2.1-.9.4-3.1 1.1-4.5-1.3-.3-.5-1.1-1.7-2.4-1.7-1 0-1.7.9 0 1.3 1.7.4 2.3 2 2.3 2 1.4 2.3 3.5 1.6 4.4 1.2 0 .8 0 1.7 0 2.2"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -62,6 +65,7 @@ function LinkedinIcon() {
         stroke="currentColor"
         strokeWidth="1.7"
       />
+
       <circle
         cx="5"
         cy="4"
@@ -69,12 +73,14 @@ function LinkedinIcon() {
         stroke="currentColor"
         strokeWidth="1.7"
       />
+
       <path
         d="M11 21V12.5a4.5 4.5 0 0 1 9 0V21"
         stroke="currentColor"
         strokeWidth="1.7"
         strokeLinecap="round"
       />
+
       <path
         d="M11 16h9"
         stroke="currentColor"
@@ -103,6 +109,7 @@ function MailIcon() {
         stroke="currentColor"
         strokeWidth="1.7"
       />
+
       <path
         d="M4 7l8 6 8-6"
         stroke="currentColor"
@@ -118,6 +125,7 @@ function Contact() {
   return (
     <section className="contact-section" id="contact">
       <div className="container">
+        {/* Main contact message */}
         <motion.div
           className="contact-main"
           initial={{ opacity: 0, y: 28 }}
@@ -146,6 +154,7 @@ function Contact() {
             <a
               href={profile.social.email}
               className="contact-primary-button"
+              aria-label="Start a conversation by email"
             >
               Start a Conversation
               <ArrowUpRightIcon />
@@ -156,6 +165,7 @@ function Contact() {
               className="contact-secondary-button"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Open Ankit Kumar's LinkedIn profile"
             >
               LinkedIn
               <ArrowUpRightIcon />
@@ -163,6 +173,7 @@ function Contact() {
           </div>
         </motion.div>
 
+        {/* Contact links */}
         <motion.div
           className="contact-links"
           initial={{ opacity: 0, y: 22 }}
@@ -170,9 +181,11 @@ function Contact() {
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.65, delay: 0.12 }}
         >
+          {/* Email */}
           <a
             href={profile.social.email}
             className="contact-link-card"
+            aria-label="Contact Ankit Kumar by email"
           >
             <div className="contact-link-icon">
               <MailIcon />
@@ -180,17 +193,19 @@ function Contact() {
 
             <div>
               <span>Email</span>
-              <strong>{profile.email}</strong>
+              <strong>Contact Me</strong>
             </div>
 
             <ArrowUpRightIcon />
           </a>
 
+          {/* GitHub */}
           <a
             href={profile.social.github}
             className="contact-link-card"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Open Ankit Kumar's GitHub profile"
           >
             <div className="contact-link-icon">
               <GithubIcon />
@@ -198,17 +213,19 @@ function Contact() {
 
             <div>
               <span>GitHub</span>
-              <strong>github.com/Ankitkumar-x</strong>
+              <strong>View GitHub Profile</strong>
             </div>
 
             <ArrowUpRightIcon />
           </a>
 
+          {/* LinkedIn */}
           <a
             href={profile.social.linkedin}
             className="contact-link-card"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Open Ankit Kumar's LinkedIn profile"
           >
             <div className="contact-link-icon">
               <LinkedinIcon />
@@ -216,24 +233,14 @@ function Contact() {
 
             <div>
               <span>LinkedIn</span>
-              <strong>linkedin.com/in/ankit-kumar-153239360</strong>
+              <strong>View LinkedIn Profile</strong>
             </div>
 
             <ArrowUpRightIcon />
           </a>
-
-          <div className="contact-link-card contact-location">
-            <div className="contact-link-icon contact-location-mark">
-              ◎
-            </div>
-
-            <div>
-              <span>Location</span>
-              <strong>Warangal, Telangana, India</strong>
-            </div>
-          </div>
         </motion.div>
 
+        {/* Footer row */}
         <div className="contact-bottom">
           <div className="contact-brand">
             <strong>ANKIT KUMAR</strong>
@@ -241,13 +248,17 @@ function Contact() {
           </div>
 
           <div className="contact-bottom-center">
-            <span>Mathematics & Scientific Computing</span>
+            <span>Mathematics &amp; Scientific Computing</span>
             <span>National Institute of Technology, Warangal</span>
           </div>
 
           <div className="contact-bottom-right">
             <span>© 2026</span>
-            <a href="#home" aria-label="Back to top">
+
+            <a
+              href="#home"
+              aria-label="Back to top"
+            >
               ↑
             </a>
           </div>
