@@ -53,6 +53,111 @@ const projects = [
   },
 
   {
+    id: "data-analyst-ai-chatbot",
+    number: "05",
+    title: "Data Analyst AI Chatbot",
+    category: "AI / Data Analytics",
+    featured: true,
+
+
+    shortDescription:
+      "An AI-powered conversational analytics platform that interprets natural-language data questions, orchestrates structured analytical workflows, and delivers validated, interpretable insights.",
+
+    problem:
+      "Bridge the gap between natural-language business questions and technical data analysis by enabling users to explore and analyze structured data without manually designing queries, computations, or exploratory workflows.",
+
+  
+    approach: [
+      "Developed an LLM-powered AI Data Analyst that converts natural-language questions into executable analytical workflows, enabling users to query structured datasets without manually writing SQL or Python code.",
+      "Engineered an agentic data-analysis pipeline integrating dataset profiling, function/tool calling, Pandas computation, statistical analysis, filtering, ranking, and multi-step reasoning for context-aware results.",
+      "Implemented analytical operations including aggregation, Top-N analysis, group comparison, percentage contribution, correlation analysis, conditional filtering, time-series analysis, and comparative insights.",
+      "Built intent-driven Plotly visualization generation supporting bar, line, pie, scatter, and metric charts, with visualization selection based on analytical intent.",
+      "Integrated conversational memory, schema validation, numerical/categorical/date detection, missing-value analysis, invalid-query recovery, and prompt-engineering constraints for reliable multi-turn analytics and grounded insights."
+    ],
+
+
+    pipeline: [
+      "User Question",
+      "Intent Understanding",
+      "Data Context & Schema",
+      "Analysis Planning",
+      "Query / Computation Generation",
+      "Execution",
+      "Result Validation",
+      "Insight & Visualization Generation",
+      "Natural-Language Response",
+    ],
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "SQL",
+      "FastAPI",
+      "React",
+      "Large Language Models (LLMs)",
+      "Prompt Engineering",
+      "Natural Language Processing",
+      "Plotly",
+      "Data Analysis",
+      "Statistical Analysis",
+      "AI / Machine Learning",
+    ],
+
+    github: GITHUB_PROFILE,
+  },
+
+  {
+    id: "nitw-placement-portal",
+    number: "04",
+    title: "NITW Placement Portal",
+    category: "Full-Stack Systems",
+    status: "Led & Handed Over",
+    featured: true,
+
+    shortDescription:
+      "A real-time college placement platform developed around structured student and recruiter workflows, database-backed applications, eligibility processing, authentication, and placement analytics.",
+
+    problem:
+      "Develop a centralized platform capable of managing student profiles, company information, eligibility rules, applications, placement workflows, and analytical placement statistics in a structured and scalable system.",
+
+    approach: [
+      "Participated in and led the architecture and implementation of major placement-platform components.",
+      "Designed normalized data structures for students, companies, recruiters, applications, eligibility, and placement records.",
+      "Implemented role-based workflows for students, recruiters, and administrators.",
+      "Developed application and eligibility workflows supporting structured placement operations.",
+      "Integrated frontend interfaces with backend APIs and persistent database services.",
+      "Worked on application tracking and placement-statistics modules for data-driven monitoring.",
+      "After completing my primary development and leadership responsibilities, handed over the project to another contributor for continuation.",
+    ],
+
+    pipeline: [
+      "Requirement Analysis",
+      "System Architecture",
+      "Data Modeling",
+      "Authentication",
+      "Role-Based Access",
+      "Eligibility Processing",
+      "Application Management",
+      "Placement Analytics",
+      "Project Handover",
+    ],
+
+    technologies: [
+      "Python",
+      "Django",
+      "React",
+      "Vite",
+      "Node.js",
+      "MongoDB",
+      "SQL",
+      "Bootstrap",
+    ],
+
+    github: GITHUB_PROFILE,
+  },
+
+  {
     id: "walmart-sales-analysis",
     number: "02",
     title: "Walmart Sales Analysis",
@@ -146,103 +251,6 @@ const projects = [
     github: GITHUB_PROFILE,
   },
 
-  {
-    id: "nitw-placement-portal",
-    number: "04",
-    title: "NITW Placement Portal",
-    category: "Full-Stack Systems",
-    status: "Led & Handed Over",
-    featured: true,
-
-    shortDescription:
-      "A real-time college placement platform developed around structured student and recruiter workflows, database-backed applications, eligibility processing, authentication, and placement analytics.",
-
-    problem:
-      "Develop a centralized platform capable of managing student profiles, company information, eligibility rules, applications, placement workflows, and analytical placement statistics in a structured and scalable system.",
-
-    approach: [
-      "Participated in and led the architecture and implementation of major placement-platform components.",
-      "Designed normalized data structures for students, companies, recruiters, applications, eligibility, and placement records.",
-      "Implemented role-based workflows for students, recruiters, and administrators.",
-      "Developed application and eligibility workflows supporting structured placement operations.",
-      "Integrated frontend interfaces with backend APIs and persistent database services.",
-      "Worked on application tracking and placement-statistics modules for data-driven monitoring.",
-      "After completing my primary development and leadership responsibilities, handed over the project to another contributor for continuation.",
-    ],
-
-    pipeline: [
-      "Requirement Analysis",
-      "System Architecture",
-      "Data Modeling",
-      "Authentication",
-      "Role-Based Access",
-      "Eligibility Processing",
-      "Application Management",
-      "Placement Analytics",
-      "Project Handover",
-    ],
-
-    technologies: [
-      "Python",
-      "Django",
-      "React",
-      "Vite",
-      "Node.js",
-      "MongoDB",
-      "SQL",
-      "Bootstrap",
-    ],
-
-    github: GITHUB_PROFILE,
-  },
-
-  {
-    id: "data-analyst-ai-chatbot",
-    number: "05",
-    title: "Data Analyst AI Chatbot",
-    category: "AI / Data Analytics",
-    status: "In Development",
-    featured: true,
-
-    shortDescription:
-      "An AI-assisted analytics platform that allows users to ask data questions in natural language and converts those requests into structured analytical workflows and interpretable insights.",
-
-    problem:
-      "Reduce the gap between natural-language business questions and technical data analysis by enabling users to interact with analytical data without manually designing every query or exploratory workflow.",
-
-    approach: [
-      "Designing a conversational interface for natural-language analytical requests.",
-      "Interpreting user intent and determining the analytical task required for each question.",
-      "Connecting user intent with structured data and analytical context before execution.",
-      "Generating and executing analysis plans against the underlying data source.",
-      "Validating analytical outputs before converting them into user-facing responses.",
-      "Transforming analytical results into concise explanations, insights, and decision-oriented summaries.",
-      "Structuring the application as a modular pipeline so additional analytics and AI capabilities can be integrated independently.",
-    ],
-
-    pipeline: [
-      "User Question",
-      "Intent Understanding",
-      "Data Context",
-      "Analysis Planning",
-      "Query / Computation",
-      "Execution",
-      "Validation",
-      "Insight Generation",
-      "Natural-Language Response",
-    ],
-
-    technologies: [
-      "Python",
-      "AI / Machine Learning",
-      "Natural Language Processing",
-      "SQL",
-      "Data Analysis",
-      "LLM Integration",
-    ],
-
-    github: GITHUB_PROFILE,
-  },
 ];
 
 export default projects;

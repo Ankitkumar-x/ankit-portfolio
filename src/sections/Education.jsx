@@ -9,9 +9,9 @@ const education = [
     highlight: true,
   },
   {
-    year: "2022 — 2023",
+    year: "2022 — 2024",
     degree: "ITI — National Council for Vocational Training",
-    institution: "Gautam Buddha Pvt. ITI, Hazaribagh",
+    institution: "Industrial Training Institute, Giridih Pachamba",
     type: "Vocational Qualification",
     highlight: false,
   },

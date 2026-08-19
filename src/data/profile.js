@@ -20,7 +20,7 @@ const profile = {
   description:
     "I combine mathematical reasoning, statistics, computational methods, and machine learning to transform complex data into predictive models, analytical insights, and practical intelligent solutions.",
 
-  resumeUrl: "/Ankit_Kumar_Resume.pdf",
+  resumeUrl: "/Ankit_reSume.pdf",
 
   social: {
     github: "https://github.com/Ankitkumar-x",
