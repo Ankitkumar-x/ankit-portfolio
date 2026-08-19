@@ -54,7 +54,7 @@ const projects = [
 
   {
     id: "data-analyst-ai-chatbot",
-    number: "05",
+    number: "02",
     title: "Data Analyst AI Chatbot",
     category: "AI / Data Analytics",
     featured: true,
@@ -109,7 +109,7 @@ const projects = [
 
   {
     id: "nitw-placement-portal",
-    number: "04",
+    number: "03",
     title: "NITW Placement Portal",
     category: "Full-Stack Systems",
     status: "Led & Handed Over",
@@ -159,7 +159,7 @@ const projects = [
 
   {
     id: "walmart-sales-analysis",
-    number: "02",
+    number: "04",
     title: "Walmart Sales Analysis",
     category: "Data Analytics",
     status: "Completed",
@@ -206,7 +206,7 @@ const projects = [
 
   {
     id: "library-management-system",
-    number: "03",
+    number: "05",
     title: "Library Management System",
     category: "Database Engineering",
     status: "Completed",
